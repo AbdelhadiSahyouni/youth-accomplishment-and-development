@@ -1,0 +1,129 @@
+<script>
+    function showSidebar(){
+const sidebar = document.querySelector('.sidebar');
+sidebar.style.display = 'flex';
+}
+
+function hideSidebar(){
+const sidebar = document.querySelector('.sidebar');
+sidebar.style.display = 'none';
+}
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Almasri - Advisor</title>
+    <link rel="icon" href="yadlogo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <!-- This is the NavBar section-->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#719637"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../AboutUs/AboutUs.html">About us</a></li>
+            <li><a href="../Blogs/Blogs.html">Blogs</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+            <li id="opportunity-item2"><a href="../Volunteer/Volunteer.html"><i>Volunteer</i></a></li>
+        </ul>
+
+        
+        <ul>
+            <li><a href="../Home/Home.html" id="yad-logo"><img src="yadlogo.png" alt=""></a></li>
+            <li class="hideonmobile"><a href="../Home/Home.html">Home</a></li>
+            <li class="hideonmobile"><a href="../AboutUs/AboutUs.html">About us</a></li>
+            <li class="hideonmobile"><a href="../Blogs/Blogs.html">Blogs</a></li>
+            <li class="hideonmobile"><a href="../Contact/Contact.html">Contact</a></li>
+            <li class="hideonmobile" id="opportunity-item1"><a href="../Volunteer/Volunteer.html"><i>Volunteer</i></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#719637"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+
+        <!-- information Section -->
+
+        <div class="conter_info">
+            <drv class="row_info">
+                <div class="team_pic"><img src="team5.png" alt="Sarah Almasri"></div>
+                
+                <div class="team_info_col">
+                    <a href="javascript:history.back()">Back ></a>
+                    
+                    <div class="name_position_col">
+                        <h1>Sarah Almasri</h1>
+                        <h2>Advisor</h2>
+                    </div>
+
+                    <div class="paragraph"><p>Sarah Almasri, an insightful Advisor, plays a pivotal role in providing strategic guidance and mentorship. Her expertise and critical thinking skills allow her to navigate challenges and offer innovative solutions. Sarah’s ability to analyze situations and provide tailored advice ensures the team stays focused on achieving its goals. She is a trusted voice in the organization, helping shape its vision for a brighter future.</p></div>
+                    
+                    <div id="linkedin-info"><a href="https://www.linkedin.com/in/rose-farah"><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+            </drv>
+        </div>
+
+
+
+
+
+
+
+        <!-- This is the footer section -->
+        <div class="background-footer">
+            <footer>
+                <div class="cont">
+                    <div class="row">
+
+                        <div class="footer-col">
+                            <h4>About Us</h4>
+                            <ul>
+                                <li><a href="../Home/Home.html">YAD</a></li>
+                                <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+                                <li><a href="../Blogs/Blogs.html">Blogs</a></li>
+                                <li><a href="../Contact/Contact.html">Contact</a></li>
+                                <li><a href="../Volunteer/Volunteer.html">Volunteer</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Our work</h4>
+                            <ul>
+                                <li><a href="../AboutUs/AboutUs.html">Education program</a></li>
+                                <li><a href="../AboutUs/AboutUs.html">Scholarship program</a></li>
+                                <li><a href="../AboutUs/AboutUs.html">Career program</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+            <div class="CopyRightText">
+                <p>Copyright © 2024 YAD Initiative. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

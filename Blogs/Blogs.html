@@ -1,0 +1,226 @@
+<script>
+    function showSidebar(){
+const sidebar = document.querySelector('.sidebar');
+sidebar.style.display = 'flex';
+}
+
+function hideSidebar(){
+const sidebar = document.querySelector('.sidebar');
+sidebar.style.display = 'none';
+}
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAD - News</title>
+    <link rel="icon" href="yadlogo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaK2Y4p6FxFc7eNPAtB1+0CrsL7l29Kxf0Cq8nIBL3yE5zE6wh1TLV3kIej" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+qW9KqMI5BXpEVJp4Y1a2wAlpC4Kl" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- This is the NavBar section-->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#719637"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../AboutUs/AboutUs.html">About us</a></li>
+            <li><a href="../Blogs/Blogs.html">Blogs</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+            <li id="opportunity-item2"><a href="../Volunteer/Volunteer.html"><i>Volunteer</i></a></li>
+        </ul>
+
+        
+        <ul>
+            <li><a href="../Home/Home.html" id="yad-logo"><img src="yadlogo.png" alt=""></a></li>
+            <li class="hideonmobile"><a href="../Home/Home.html">Home</a></li>
+            <li class="hideonmobile"><a href="../AboutUs/AboutUs.html">About us</a></li>
+            <li class="hideonmobile"><a href="../Blogs/Blogs.html">Blogs</a></li>
+            <li class="hideonmobile"><a href="../Contact/Contact.html">Contact</a></li>
+            <li class="hideonmobile" id="opportunity-item1"><a href="../Volunteer/Volunteer.html"><i>Volunteer</i></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#719637"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+
+
+        <!-- First Section -->
+
+        <div class="conter first_blog">
+            <div class="background-news"></div>
+            <div class="title"><h1>News « YAD »</h1></div>
+        </div>
+
+
+
+        <!-- Second Section -->
+
+        <div class="conter secound_blog">
+            <div class="blogs-row">
+
+                <div class="blog-box">
+                    <a href="blog1-open.html"><img src="blog1.jpg" alt="first_blog"></a>
+                    <div class="blog-info">
+                        <span>October 3, 2024 • <span id="dot">Program Update</span></span>
+                        <a href="blog1-open.html">The Joy of Learning Through Children’s Eyes</a>
+                    </div>
+                </div>
+
+                <div class="blog-box">
+                    <a href="blog2-open.html"><img src="blog2.jpg" alt="second_blog"></a>
+                    <div class="blog-info">
+                        <span>October 2, 2024 • <span id="dot">Program Update</span></span>
+                        <a href="blog2-open.html">Empowering Change: A Voice of Hope</a>
+                    </div>
+                </div>
+
+                <div class="blog-box">
+                    <a href="blog3-open.html"><img src="blog3.png" alt="third_blog"></a>
+                    <div class="blog-info">
+                        <span>October 1, 2024 • <span id="dot">Program Update</span></span>
+                        <a href="blog3-open.html">Teen Connections: The Strength of Friendship</a>
+                    </div>
+                </div>
+
+                <div class="blog-box">
+                    <a href="blog4-open.html"><img src="blog4.jpg" alt="forth_blog"></a>
+                    <div class="blog-info">
+                        <span>September 28, 2024 • <span id="dot">Program Update</span></span>
+                        <a href="blog4-open.html">The Journey of Knowledge: Inside a Classroom</a>
+                    </div>
+                </div>
+
+                <div class="blog-box">
+                    <a href="blog5-open.html"><img src="blog5.jpg" alt="fifth_blog"></a>
+                    <div class="blog-info">
+                        <span>September 20, 2024 • <span id="dot">Program Update</span></span>
+                        <a href="blog5-open.html">Building Bright Futures for Students Worldwide</a>
+                    </div>
+                </div>
+
+            </div>
+            <button id="load-more" class="load-more-button">Load More</button>
+        </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const blogBoxes = document.querySelectorAll(".blog-box"); // جميع المدونات
+            const loadMoreButton = document.getElementById("load-more");
+            let visibleBlogs = 3; // عدد المدونات المرئية افتراضيًا
+
+                // إظهار أول 3 مدونات عند التحميل
+                blogBoxes.forEach((blog, index) => {
+                    if (index < visibleBlogs) {
+                        blog.classList.add("visible");
+                    }
+                });
+
+                // عند النقر على زر "Load More"
+                loadMoreButton.addEventListener("click", function () {
+                    visibleBlogs += 3; // زيادة عدد المدونات المرئية بمقدار 3
+                    blogBoxes.forEach((blog, index) => {
+                        if (index < visibleBlogs) {
+                            blog.classList.add("visible");
+                        }
+                        });
+
+                    // إخفاء الزر إذا تم عرض جميع المدونات
+                    if (visibleBlogs >= blogBoxes.length) {
+                        loadMoreButton.style.display = "none";
+                    }
+                });
+            });
+        </script>
+
+
+
+        <!-- Third Section -->
+
+        <section class="countainer fifth">
+            
+            <div id="main-div">
+
+                    <div class="newsletter-header">
+                        <img src="Newspaper.gif" alt="news-icon" class="newsletter-icon">
+                        <h2>Do you want to hear our news?</h2>
+                        <p>Subscribe to our newsletter</p>
+                    </div>
+        
+        
+                        <form class="newsletter-form" action="#" method="post">
+                            <div class="form-row">
+                                <input type="text" name="first_name" placeholder="First Name" class="input-field">
+                                <input type="text" name="last_name" placeholder="Last Name" class="input-field">
+                            </div>
+                            <input type="email" name="email" placeholder="Enter your email" class="input-field width" >
+                            <div class="center-button"><button type="submit" class="submit-button">Subscribe</button></div>
+                        </form>
+            
+                    <div class="terms-text"><p>By clicking Subscribe, you agree to the Terms of Use</p></div>
+            
+            </div>
+
+        </section>
+
+
+
+        <!-- This is the footer section -->
+        <div class="background-footer">
+            <footer>
+                <div class="cont">
+                    <div class="row">
+
+                        <div class="footer-col">
+                            <h4>About Us</h4>
+                            <ul>
+                                <li><a href="../Home/Home.html">YAD</a></li>
+                                <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+                                <li><a href="../Blogs/Blogs.html">Blogs</a></li>
+                                <li><a href="../Contact/Contact.html">Contact</a></li>
+                                <li><a href="../Volunteer/Volunteer.html">Volunteer</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Our work</h4>
+                            <ul>
+                                <li><a href="../AboutUs/AboutUs.html">Education program</a></li>
+                                <li><a href="../AboutUs/AboutUs.html">Scholarship program</a></li>
+                                <li><a href="../AboutUs/AboutUs.html">Career program</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+            <div class="CopyRightText">
+                <p>Copyright © 2024 YAD Initiative. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
